@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8">
+<title>سرویس و تعمیر پکیج</title>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: tahoma;
+        direction: rtl;
+
+        /* پس زمینه */
+        background-image: url("https://i.imgur.com/6Iej2cE.jpeg"); /* هر عکسی خواستی جایگزین کن */
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    /* تاریکی کم روی بک‌گراند (برای خوانایی بهتر) */
+    .overlay {
+        position: fixed;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background: rgba(0,0,0,0.4);
+        z-index: 1;
+    }
+
+    .container {
+        position: relative;
+        z-index: 2;
+        width: 350px;
+        padding: 20px;
+        margin: 60px auto;
+        background: white;
+        border-radius: 12px;
+        text-align: center;
+        box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    }
+
+    input, textarea, select {
+        width: 90%;
+        padding: 10px;
+        margin-top: 10px;
+        border: 1px solid #aaa;
+        border-radius: 8px;
+        font-size: 15px;
+    }
+
+    button {
+        width: 95%;
+        padding: 12px;
+        margin-top: 15px;
+        background: #0075ff;
+        border: none;
+        color: white;
+        font-size: 17px;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: #0055c8;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="overlay"></div>
+
+<div class="container">
+    <h2>درخواست سرویس و تعمیر پکیج</h2>
+
+    <form>
+        <input type="text" placeholder="نام شما">
+        <input type="text" placeholder="شماره تماس">
+        
+        <select>
+            <option>تعمیر پکیج</option>
+            <option>سرویس دوره‌ای</option>
+            <option>هواگیری</option>
+            <option>عیب‌یابی</option>
+        </select>
+
+        <textarea rows="4" placeholder="توضیحات شما (اختیاری)"></textarea>
+
+        <button type="submit">ارسال درخواست</button>
+    </form>
+</div>
+
+</body>
+</html>
